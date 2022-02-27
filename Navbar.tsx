@@ -44,10 +44,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    backgroundColor: '#222',
+    backgroundColor: '#242526',
     padding: 15,
-    shadowColor: '#f00',
-    shadowOpacity: 1,
   },
   navbarRight: {
     display: 'flex',

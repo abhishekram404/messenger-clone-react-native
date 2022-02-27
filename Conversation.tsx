@@ -1,10 +1,11 @@
 import React from 'react';
-import {ScrollView, Text} from 'react-native';
+import {ScrollView} from 'react-native';
+import ConversationBegin from './ConversationBegin';
 
 const Conversation = () => {
   return (
     <ScrollView>
-      <Text style={{fontSize: 100}}></Text>
+      <ConversationBegin />
     </ScrollView>
   );
 };
