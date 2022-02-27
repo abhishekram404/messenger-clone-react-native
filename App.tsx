@@ -9,6 +9,7 @@
  */
 
 import React from 'react';
+import {Text, View} from 'react-native';
 
 import Conversation from './Conversation';
 import Navbar from './Navbar';
@@ -18,6 +19,9 @@ const App = () => {
     <>
       <Navbar />
       <Conversation />
+      {/* <View>
+        <Text>Footer</Text>
+      </View> */}
     </>
   );
 };

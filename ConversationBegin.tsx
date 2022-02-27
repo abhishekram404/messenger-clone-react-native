@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: 200,
+    marginBottom: 10,
   },
   innerWrapper: {
     display: 'flex',
@@ -40,7 +41,7 @@ const styles = StyleSheet.create({
   },
   baseText: {
     fontSize: 13,
-    fontWeight: '300',
+    fontWeight: '400',
     marginTop: 7,
   },
 });
