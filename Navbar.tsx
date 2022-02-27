@@ -1,5 +1,5 @@
 import React from 'react';
-import {Image, StyleSheet, Text, View} from 'react-native';
+import {Image, Pressable, StyleSheet, Text, View} from 'react-native';
 
 const Navbar = () => {
   return (
@@ -12,8 +12,27 @@ const Navbar = () => {
         <Text style={styles.userName}>Abhishek Ram</Text>
       </View>
       <View style={styles.navbarIcons}>
-        <Image source={require('./assets/Call.png')} style={styles.icon} />
-        <Image source={require('./assets/videocall.png')} style={styles.icon} />
+        <Pressable
+          style={({pressed}) => [
+            {
+              backgroundColor: pressed ? '#006AFF50' : 'transparent',
+            },
+            styles.iconPressable,
+          ]}>
+          <Image source={require('./assets/Call.png')} style={styles.icon} />
+        </Pressable>
+        <Pressable
+          style={({pressed}) => [
+            {
+              backgroundColor: pressed ? '#006AFF50' : 'transparent',
+            },
+            styles.iconPressable,
+          ]}>
+          <Image
+            source={require('./assets/videocall.png')}
+            style={styles.icon}
+          />
+        </Pressable>
       </View>
     </View>
   );
@@ -50,8 +69,15 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
   },
-  icon: {
-    marginLeft: 20,
+  iconPressable: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 15,
+    borderRadius: 50,
+    width: 40,
+    height: 40,
   },
+  icon: {},
 });
 export default Navbar;
