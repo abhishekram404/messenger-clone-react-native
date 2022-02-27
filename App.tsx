@@ -27,10 +27,16 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import Conversation from './Conversation';
 import Navbar from './Navbar';
 
 const App = () => {
-  return <Navbar />;
+  return (
+    <>
+      <Navbar />
+      <Conversation />
+    </>
+  );
 };
 
 export default App;
