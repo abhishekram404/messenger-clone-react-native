@@ -4,7 +4,7 @@ const ReceivedMessage = ({text}: {text: string}) => {
   return (
     <View style={styles.receivedMessageContainer}>
       <Image
-        source={require('./assets/profile.png')}
+        source={require('../assets/profile.png')}
         style={styles.profilePic}
       />
       <View style={styles.receivedMessage}>

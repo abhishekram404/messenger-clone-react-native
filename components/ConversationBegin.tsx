@@ -6,7 +6,7 @@ const ConversationBegin = () => {
     <View style={styles.conversationBegin}>
       <View style={styles.innerWrapper}>
         <Image
-          source={require('./assets/profile.png')}
+          source={require('../assets/profile.png')}
           style={styles.profilePicBig}
         />
         <Text style={styles.userName}>Abhishek Ram</Text>
